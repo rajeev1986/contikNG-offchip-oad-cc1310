@@ -1,0 +1,11 @@
+DESCR := Default
+
+FINAL_NAME = $(DEVICE_NAME)_$(DESCR)
+
+FINAL_HEX = $(FINAL_NAME).hex
+
+%.rename-hex: $(OUT_HEX)
+	cp $< $(FINAL_HEX)
+
+%.rename: %.$(TARGET) %.rename-hex
+	@
