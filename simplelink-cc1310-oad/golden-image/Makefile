@@ -1,7 +1,7 @@
 CONTIKI_PROJECT = golden-image
 all: $(CONTIKI_PROJECT)
 
-CONTIKI = ../../..
+CONTIKI = ../../../..
 
 -include $(CONTIKI)/Makefile.identify-target
 
